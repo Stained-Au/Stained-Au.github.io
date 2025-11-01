@@ -24,6 +24,8 @@ body {
 	height: 100vh;
 	float: left;
 	border-radius: 0 10px 10px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #left_in {
 	width: 5%;
