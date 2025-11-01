@@ -130,8 +130,6 @@ function matik_mode() {
 	l3bto.style.color = "#3b256eff";
 	m1d.style.backgroundImage = "radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff)";
 	r1ght.style.backgroundColor = "#55428F";
-	r1ght.style.backgroundImage = "url(resources/images/matigr.png)";
-	r1ght.style.backgroundPosition = "center";
 	st1ngs.style.backgroundColor = "#7a6ad6b6";
 
 	h0rsel1st.style.backgroundColor = "#7a6ad6b6";
@@ -150,25 +148,23 @@ function still_mode() {
 
 	img.src = "resources/images/still.png";
 
-	document.body.style.backgroundColor = "#690000ff";
+	document.body.style.backgroundColor = "#1f0000ff";
 	document.body.style.color = "#c9c9c9";
 
-	l3mn.style.backgroundColor = "#770800ff";
+	l3mn.style.backgroundColor = "#300300ff";
 	l3mn.style.backgroundImage = "url(resources/images/stille.png)";
 	l3mn.style.backgroundPosition = "center";
-	l3mno.style.backgroundColor = "#770800ff";
+	l3mno.style.backgroundColor = "#300300ff";
 	l3mno.style.backgroundImage = "url(resources/images/stille.png)";
 	l3mno.style.backgroundPosition = "center";
-	l3bt.style.backgroundColor = "#740800b0";
+	l3bt.style.backgroundColor = "#440500ff";
 	l3bt.style.color = "#b8827dff";
-	l3bto.style.backgroundColor = "#740800b0";
+	l3bto.style.backgroundColor = "#440500ff";
 	l3bto.style.color = "#b8827dff";
-	m1d.style.backgroundImage = "radial-gradient(circle at center, #9b2c2cff, #910e0eff, #8f2100ff, #740800ff)"
-	r1ght.style.backgroundColor = "#770800ff";
-	r1ght.style.backgroundImage = "url(resources/images/stillg.png)";
-	r1ght.style.backgroundPosition = "center";
-	st1ngs.style.backgroundColor = "#740800ff";
+	m1d.style.backgroundImage = "radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff)"
+	r1ght.style.backgroundColor = "#300300ff";
+	st1ngs.style.backgroundColor = "#440500ff";
 
-	h0rsel1st.style.backgroundColor = "#740800b0";
+	h0rsel1st.style.backgroundColor = "#440500ff";
 	h0rsel1st.style.color = "#e6cdcbff";
 }
