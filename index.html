@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Watashi Matikanetannhauser</title>
+        <link rel="icon" type="image/x-icon" href="resources/images/maticon.png">
+        <link rel = "stylesheet" href = "resources/styles/style.css">
+		<script src = "resources/scripts/script.js"></script>
+    </head>
+
+    <body>
+
+        <section id = "left_in">
+            <div>
+                <button type = "button" id = "m3nu_out" onclick = "menu_out()">⇨</button>
+            </div>
+        </section>
+
+        <section id = "left_out">
+            <div>
+                <button type = "button" id = "m3nu_in" onclick = "menu_in()">⇦</button>
+            </div>
+        </section>
+
+        <section id = "mid">
+            <div id = "settings">
+                <h2>Settings:</h2>
+                <button type = "button" id = "sett_close" onclick = "close_settings()"></button>
+                <hr>
+                <div id = "theme">
+                    <h3>Theme:</h3>
+                <label><button id = "dark" onclick="dark_mode()"></button>Dark Mode</label><br>
+                <label><button id = "light" onclick="light_mode()"></button>Light Mode</label><br>
+                <label><button id = "purple" onclick="purple_mode()"></button>Purpel Mode</label><br>
+                <label><button id = "matik" onclick="matik_mode()"></button>Matik Mode</label><br>
+                <label><button id = "still" onclick="still_mode()"></button>Still Mode</label>
+                </div>
+                <hr>
+                <p>Matikanefukukitaru / Matikanetannhauser / Haru Urara / Special Week</p>
+                <p>Agnes Digital / Fuji Kiseki / Kitasan Black / Furioso / Sugar Lights</p>
+                <p>Curren Bouquetd'or / Meisho Doto / Daiwa Scarlet / Biwa Hayahide</p>
+                <p>Red Desire / Silence Suzuka / Grass Wonder / King Halo / Hishi Amazon</p>
+                <p>Loves Only You / Speed Symboli / Satono Diamond / Almond Eye</p>
+                <p>Still In Love / Tokai Teio / Jungle Pocket / Mejiro McQueen</p>
+            </div>
+            <div id = "mid_img">
+                <img src = "resources/images/satono.png" alt = "satono" id = "test_image_mid">
+            </div>
+        </section>
+
+        <section id = "right">
+            <button type = "button" id = "settings_btn" onclick = "settings()"></button>
+        </section>
+
+    </body>
+</html>    
