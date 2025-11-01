@@ -54,7 +54,7 @@ body {
 	background-color: #1f1f1f;
 	margin: 23%;
 	position: relative;
-	bottom: -93vh;
+	bottom: -89vh;
 }
 #settings {
 	outline: 1px solid #4c2e64;
@@ -131,4 +131,13 @@ body {
     right: 0.05vw;
 	margin-left: auto;
 	border-radius: 40%;
+}
+#horses_list {
+	width: 2vw;
+	height: 2vw;
+	margin-top: 0.5vw;
+	margin-left: 0.5vw;
+	border-radius: 10px;
+	background-color: #1f1f1f;
+	color: #888888;
 }

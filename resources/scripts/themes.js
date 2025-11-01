@@ -7,6 +7,7 @@ function dark_mode() {
 	var r1ght = document.getElementById("right"); // prawy pasek
 	var st1ngs = document.getElementById("settings_btn"); // prawy przycisk
 	var img = document.getElementById("test_image_mid");
+	var h0rsel1st = document.getElementById("horses_list");
 
 	img.src = "resources/images/satono.png";
 
@@ -28,6 +29,9 @@ function dark_mode() {
 	m1d.style.backgroundColor = "#1f1f1f";
 	r1ght.style.backgroundColor = "#262626";
 	st1ngs.style.backgroundColor = "#1f1f1f";
+
+	h0rsel1st.style.backgroundColor = "#1f1f1f";
+	h0rsel1st.style.color = "#888888";
 }
 function light_mode() {
 	var l3mn = document.getElementById("left_in"); // lewy pasek cienszy
@@ -38,6 +42,7 @@ function light_mode() {
 	var r1ght = document.getElementById("right"); // prawy pasek
 	var st1ngs = document.getElementById("settings_btn"); // prawy przycisk
 	var img = document.getElementById("test_image_mid");
+	var h0rsel1st = document.getElementById("horses_list");
 
 	img.src = "resources/images/rice.png";
 
@@ -59,6 +64,9 @@ function light_mode() {
 	m1d.style.backgroundColor = "#ceccccff";
 	r1ght.style.backgroundColor = "#a8a8a8ff";
 	st1ngs.style.backgroundColor = "#ceccccff";
+
+	h0rsel1st.style.backgroundColor = "#ceccccff";
+	h0rsel1st.style.color = "#535353ff";
 }
 function purple_mode() {
 	var l3mn = document.getElementById("left_in"); // lewy pasek cienszy
@@ -69,6 +77,7 @@ function purple_mode() {
 	var r1ght = document.getElementById("right"); // prawy pasek
 	var st1ngs = document.getElementById("settings_btn"); // prawy przycisk
 	var img = document.getElementById("test_image_mid");
+	var h0rsel1st = document.getElementById("horses_list");
 
 	img.src = "resources/images/sweep.png";
 
@@ -89,6 +98,9 @@ function purple_mode() {
 	m1d.style.backgroundColor = "#2f234dff";
 	r1ght.style.backgroundColor = "#392a5cff";
 	st1ngs.style.backgroundColor = "#2f234dff";
+
+	h0rsel1st.style.backgroundColor = "#2f234dff";
+	h0rsel1st.style.color = "#6f57a5ff";
 }
 function matik_mode() {
 	var l3mn = document.getElementById("left_in"); // lewy pasek cienszy
@@ -99,6 +111,7 @@ function matik_mode() {
 	var r1ght = document.getElementById("right"); // prawy pasek
 	var st1ngs = document.getElementById("settings_btn"); // prawy przycisk
 	var img = document.getElementById("test_image_mid");
+	var h0rsel1st = document.getElementById("horses_list");
 
 	img.src = "resources/images/matik.png";
 
@@ -120,6 +133,9 @@ function matik_mode() {
 	r1ght.style.backgroundImage = "url(resources/images/matigr.png)";
 	r1ght.style.backgroundPosition = "center";
 	st1ngs.style.backgroundColor = "#7a6ad6b6";
+
+	h0rsel1st.style.backgroundColor = "#7a6ad6b6";
+	h0rsel1st.style.color = "#3b256eff";
 }
 function still_mode() {
 	var l3mn = document.getElementById("left_in"); // lewy pasek cienszy
@@ -130,6 +146,7 @@ function still_mode() {
 	var r1ght = document.getElementById("right"); // prawy pasek
 	var st1ngs = document.getElementById("settings_btn"); // prawy przycisk
 	var img = document.getElementById("test_image_mid");
+	var h0rsel1st = document.getElementById("horses_list");
 
 	img.src = "resources/images/still.png";
 
@@ -151,4 +168,7 @@ function still_mode() {
 	r1ght.style.backgroundImage = "url(resources/images/stillg.png)";
 	r1ght.style.backgroundPosition = "center";
 	st1ngs.style.backgroundColor = "#740800ff";
+
+	h0rsel1st.style.backgroundColor = "#740800b0";
+	h0rsel1st.style.color = "#b8827dff";
 }
