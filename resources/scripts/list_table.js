@@ -4,20 +4,47 @@ var names = Object.fromEntries(
 
 function create_table(type) {
     var table = document.getElementById("list_display");
-    var x = 0
-    var y = 0;
     var z = 0;
     var img;
     var im;
 
     table.innerHTML = "";
 
-    for(var i = 1135; i>=1001; i--) {
+    for(var i = 1001; i<=1136; i++) {
+        if(names[i] === undefined){
+            continue;
+        }
         if(z % 5 == 0) {
-            var row = table.insertRow(y);
+            var row = table.insertRow(-1);
         }
         img = i + "-" + type + ".png";
-        cell = row.insertCell(x);
+        cell = row.insertCell(-1);
+        im = i+"im";
+        cell.innerHTML = "<div class = 'tag' id = '"+ i +"' onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")'></div><img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")' id = '"+ im +"'>";
+        z++;
+    }
+    for(var i = 2001; i<=2008; i++) {
+        if(names[i] === undefined){
+            continue;
+        }
+        if(z % 5 == 0) {
+            var row = table.insertRow(-1);
+        }
+        img = i + "-" + type + ".png";
+        cell = row.insertCell(-1);
+        im = i+"im";
+        cell.innerHTML = "<div class = 'tag' id = '"+ i +"' onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")'></div><img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")' id = '"+ im +"'>";
+        z++;
+    }
+    for(var i = 9001; i<=9051; i++) {
+        if(names[i] === undefined){
+            continue;
+        }
+        if(z % 5 == 0) {
+            var row = table.insertRow(-1);
+        }
+        img = i + "-" + type + ".png";
+        cell = row.insertCell(-1);
         im = i+"im";
         cell.innerHTML = "<div class = 'tag' id = '"+ i +"' onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")'></div><img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")' id = '"+ im +"'>";
         z++;
