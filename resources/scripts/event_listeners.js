@@ -81,7 +81,6 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-/*
 document.addEventListener("keydown", function(event) {
     const active = document.activeElement;
     const isTyping =
@@ -89,11 +88,10 @@ document.addEventListener("keydown", function(event) {
         active.tagName === "TEXTAREA" ||
         active.isContentEditable;
 
-    if (!isTyping && (event.key === "t" || event.key === "T")) {
+    if (!isTyping && (event.key === "?")) {
         console.log(get_cookies());
     }
 });
-*/
 
 window.addEventListener("load", function() {
 

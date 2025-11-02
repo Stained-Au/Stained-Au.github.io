@@ -22,6 +22,8 @@ function create_table(type) {
         cell.innerHTML = "<div class = 'tag' id = '"+ i +"' onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")'></div><img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")' id = '"+ im +"'>";
         z++;
     }
+
+    load_theme();
 }
 function while_over(x) {
     var th1s = document.getElementById(x);

@@ -14,6 +14,8 @@ function getIds(wanted) {
 
 
 function dark_mode() {
+    set_perm_cookie("all_horse_theme", "dark");
+
     document.body.style.cssText = `
         background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
         background-color: #ceccccff;
@@ -39,7 +41,7 @@ function dark_mode() {
         `;
     });
     document.querySelectorAll(".tag").forEach(el => {
-         el.style.cssText = `
+        el.style.cssText = `
         background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff));
          `;
     });
@@ -47,6 +49,8 @@ function dark_mode() {
 
 
 function light_mode() {
+    set_perm_cookie("all_horse_theme", "light");
+
     document.body.style.cssText = `
         background-image: radial-gradient(circle at center, #ffffffff, #ceccccff, #bebebeff);
         background-color: #ceccccff;
@@ -76,4 +80,24 @@ function light_mode() {
         background-image: radial-gradient(circle at center, #ffffffff, #ceccccff, #bebebeff);
          `;
     });
+}
+
+function load_theme() {
+    let theme = get_cookies().all_horse_theme;
+
+    console.log(theme);
+    console.log(get_cookies());
+
+    switch(theme) {
+        case "dark":
+            dark_mode();
+            break;
+        case "light":
+            light_mode();
+            break;
+
+        default:
+            dark_mode();
+            break;
+    }
 }

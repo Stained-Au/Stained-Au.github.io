@@ -1,5 +1,5 @@
 function set_perm_cookie(name, value) {
-	document.cookie = name + "=" + value + "; expires=Fri, 31 Dec 9999 23:59:59 UTC; path=/";
+	document.cookie = name + "=" + value + "; expires=Fri, 31 Dec 9999 23:59:59 UTC;";
 	//document.cookie = "theme=dark; expires=Mon, 3 Nov 2025 12:00:00 UTC; path=/";
 }
 
@@ -23,7 +23,7 @@ function get_cookies() {
 	for(let i = 0; i < kv_list.length; i++) {
 		let kv = kv_list[i].split("=");
 
-		cookies[kv[0]] = kv[1];
+		cookies[kv[0].trim()] = kv[1].trim();
 	}
 
 	return cookies;
