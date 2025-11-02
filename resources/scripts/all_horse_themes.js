@@ -166,12 +166,12 @@ function still_mode() {
 	    color: #b8827dff;
     `;
     document.querySelectorAll("hr").forEach(hr => {
-        hr.style.borderColor = "#b8827dff";
+        hr.style.borderColor = "#290300ff";
     });
     document.querySelectorAll("td").forEach(td => {
         td.style.cssText = `
         background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
-        border: 0.2vw solid #b8827dff;
+        border: 0.2vw solid #290300ff;
         `;
     });
     document.querySelectorAll(".selection").forEach(el => {
