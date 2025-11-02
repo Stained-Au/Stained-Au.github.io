@@ -42,11 +42,23 @@ hr {
 }
 .selection {
     width: 7vw;
-	height: 2vw;
+	height: 1.5vw;
 	margin: 0.5vw;
 	font-size: 1vw;
 	border-radius: 10px;
 	background-color: #1f1f1f;
 	color: #888888;
     float: left;
+}
+.tag {
+    height: 4vw;
+    width: 15.1vw;
+    position: absolute;
+    margin-top: 5vw;
+    z-index: 99;
+    background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff);
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 1.5vw;
+    display: none;
 }
