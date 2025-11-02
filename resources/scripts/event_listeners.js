@@ -17,7 +17,6 @@ document.addEventListener("keydown", function(event) {
         active.isContentEditable;
 
     if (!isTyping && (event.key === "1")) {
-        set_perm_cookie("theme", "dark");
         dark_mode();
     }
 });
@@ -29,7 +28,6 @@ document.addEventListener("keydown", function(event) {
         active.isContentEditable;
 
     if (!isTyping && (event.key === "2")) {
-        set_perm_cookie("theme", "light");
         light_mode();
     }
 });
@@ -41,7 +39,6 @@ document.addEventListener("keydown", function(event) {
         active.isContentEditable;
 
     if (!isTyping && (event.key === "3")) {
-        set_perm_cookie("theme", "purple");
         purple_mode();
     }
 });
@@ -53,7 +50,6 @@ document.addEventListener("keydown", function(event) {
         active.isContentEditable;
 
     if (!isTyping && (event.key === "4")) {
-        set_perm_cookie("theme", "matik");
         matik_mode();
     }
 });
@@ -65,7 +61,6 @@ document.addEventListener("keydown", function(event) {
         active.isContentEditable;
 
     if (!isTyping && (event.key === "5")) {
-        set_perm_cookie("theme", "still");
         still_mode();
     }
 });
