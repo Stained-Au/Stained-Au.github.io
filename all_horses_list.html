@@ -5,14 +5,22 @@
         <title>Watashi wa Matikanefukukitaru</title>
         <link rel = "stylesheet" href = "resources/styles/style_hlist.css">
         <link rel = "icon" type = "image/x-icon" href = "resources/images/maticon.png">
+        <script src = "resources/scripts/list_table.js"></script>
     </head>
 
-    <body>
+    <body onload = "create_table('school')">
 
             <form action = "index.html">
                 <input type = "submit" value = "Back" id = "back">
             </form>
 
+            <button type = "button" class = "selection" onclick = "create_table('school')">School</button>
+            <button type = "button" class = "selection" onclick = "create_table('school-full')">School Full</button>
+            <button type = "button" class = "selection" onclick = "create_table('race')">Race</button>
+            <button type = "button" class = "selection" onclick = "create_table('race-full')">Race Full</button>
+
             <hr>
+
+            <table id = "list_display"></table>
     </body>
 </html>
