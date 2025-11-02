@@ -113,6 +113,7 @@ window.addEventListener("load", function() {
         case "still":
             still_mode();
             break;
+              
         default:
             dark_mode();
             break;

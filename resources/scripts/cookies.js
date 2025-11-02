@@ -20,10 +20,11 @@ function get_cookies() {
 
 	let kv_list = document.cookie.split(";");
 	cookies = {};
-	for(let i = 0; i < kv_list.length; i++) {
-		let kv = kv_list[i].split("=");
-
-		cookies[kv[0].trim()] = kv[1].trim();
+	if(document.cookie != "") {
+		for(let i = 0; i < kv_list.length; i++) {
+			let kv = kv_list[i].split("=");
+			cookies[kv[0].trim()] = kv[1].trim();
+		}
 	}
 
 	return cookies;
