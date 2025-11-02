@@ -1,0 +1,66 @@
+#settings {
+	outline: 1px solid #4c2e64;
+	background-color: #381f49d2;
+	color: #c9c9c9;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	width: 25vw;
+	height: 40vh;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	display: none;
+	border-radius: 1vh;
+	z-index: 999;
+	overflow: auto;
+	scrollbar-color: #330c52d2 #452b57d2;
+	scrollbar-width: thin;
+}
+#settings hr {
+	border-color: #b6b6b667;
+}
+#theme {
+	background-color: #43245779;
+	outline: 1px solid #4c2e64;
+	padding: 5px;
+	width: 35%;
+	padding-left: 1.5vw;
+}
+#theme button {
+	height: 2vh;
+	width: 2vh;
+	padding-top: 5%;
+	margin: 0.5vw;
+	border-radius: 1vh;
+}
+#dark {
+	background-color: #1f1f1f;
+}
+#light {
+	background-color: #b1b1b1;
+}
+#purple {
+	background-color: #5e228f;
+}
+#matik {
+	background-color: #822fb3;
+}
+#still {
+	background-color: #570909;
+}
+#sett_close {
+	float: right;
+	height: 1.5vh;
+	width: 1.5vh;
+	background-color: #8b4bbe7a;
+	position: absolute;
+	top:0.1vh;
+    bottom: 0;
+    left: 0;
+    right: 0.05vw;
+	margin-left: auto;
+	border-radius: 40%;
+}

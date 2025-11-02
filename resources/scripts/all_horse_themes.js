@@ -2,6 +2,7 @@ function getIds(wanted) {
     var back_button = document.getElementById("back");
     var select = document.getElementsByClassName("selection");
     var tag = document.getElementsByClassName("tag");
+    var settings_button = document.getElementById("settings_btn");
 
     if(wanted == "back_button") {
         return back_button;
@@ -9,6 +10,8 @@ function getIds(wanted) {
         return select;
     } else if (wanted == "tag") {
         return tag;
+    } else if (wanted == "settings_button") {
+        return settings_button;
     }
 }
 
@@ -45,6 +48,10 @@ function dark_mode() {
         background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff));
          `;
     });
+    getIds("settings_button").style.cssText = `
+        background-color: #1f1f1f;
+	    color: #888888;
+    `;
 }
 
 
@@ -80,6 +87,10 @@ function light_mode() {
         background-image: radial-gradient(circle at center, #ffffffff, #ceccccff, #bebebeff);
          `;
     });
+    getIds("settings_button").style.cssText = `
+        background-color: #ceccccff;
+	    color: #535353ff;
+    `;
 }
 
 
@@ -115,6 +126,10 @@ function purple_mode() {
         background-image: radial-gradient(circle at center, #4a3e69ff, #443569ff, #2f234dff);
          `;
     });
+    getIds("settings_button").style.cssText = `
+        background-color: #2f234dff;
+	    color: #6f57a5ff;
+    `;
 }
 
 
@@ -150,6 +165,10 @@ function matik_mode() {
         background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
          `;
     });
+    getIds("settings_button").style.cssText = `
+        background-color: #7a6ad6b6;
+	    color: #3b256eff;
+    `;
 }
 
 
@@ -185,6 +204,10 @@ function still_mode() {
         background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
          `;
     });
+    getIds("settings_button").style.cssText = `
+        background-color: #440500ff;
+	    color: #b8827dff;
+    `;
 }
 
 function load_theme() {

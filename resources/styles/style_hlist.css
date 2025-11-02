@@ -62,3 +62,12 @@ hr {
     padding-top: 1.5vw;
     display: none;
 }
+#settings_btn {
+	height: 1.7vw;
+	width: 1.7vw;
+	border-radius: 1vw;
+	background-color: #1f1f1f;
+    float: right;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+}
