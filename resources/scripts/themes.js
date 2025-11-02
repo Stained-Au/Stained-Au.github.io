@@ -32,6 +32,8 @@ function getIds(wanted) {
 
 
 function dark_mode() {
+	set_perm_cookie("theme", "dark");
+
 	getIds("test_image").src = "resources/images/satono.png";
 	document.body.style.cssText = `
 		backgroundImage: none;
@@ -71,6 +73,8 @@ function dark_mode() {
 
 
 function light_mode() {
+	set_perm_cookie("theme", "light");
+
 	getIds("test_image").src = "resources/images/rice.png";
 	document.body.style.cssText = `
 		backgroundImage: none;
@@ -110,6 +114,8 @@ function light_mode() {
 
 
 function purple_mode() {
+	set_perm_cookie("theme", "purple");
+
 	getIds("test_image").src = "resources/images/sweep.png";
 	document.body.style.cssText = `
 		backgroundImage: none;
@@ -149,6 +155,8 @@ function purple_mode() {
 
 
 function matik_mode() {
+	set_perm_cookie("theme", "matik");
+
 	getIds("test_image").src = "resources/images/matik.png";
 	document.body.style.cssText = `
 		backgroundImage: none;
@@ -192,6 +200,8 @@ function matik_mode() {
 
 
 function still_mode() {
+	set_perm_cookie("theme", "still");
+
 	getIds("test_image").src = "resources/images/still.png";
 	document.body.style.cssText = `
 		backgroundImage: none;
