@@ -13,7 +13,13 @@ function create_table(type) {
         }
         img = i + "-" + type + ".png";
         cell = row.insertCell(x);
-        cell.innerHTML = "<img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'>";
+        cell.innerHTML = "<img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'id = '"+ i +"' onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")'>";
         z++;
     }
+}
+function while_over(x) {
+    var th1s = document.getElementById(x);
+}
+function while_out(x) {
+    var th1s = document.getElementById(x);
 }

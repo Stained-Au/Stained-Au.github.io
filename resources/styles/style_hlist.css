@@ -20,6 +20,7 @@ hr {
 #list_display img {
     width: 15vw;
     margin: auto;
+    border-radius: 1vw;
 }
 #list_display td {
     min-height: 16vw;
@@ -28,7 +29,7 @@ hr {
     border: 0.2vw solid #3b3b3b;
     border-radius: 1vw;
     text-align: center;
-    background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff)	;
+    background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
 }
 #list_display {
     margin: auto;
@@ -37,6 +38,7 @@ hr {
 }
 #list_display td:hover {
     border-color: #666666;
+    background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff);
 }
 .selection {
     width: 7vw;
