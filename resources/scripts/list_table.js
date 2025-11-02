@@ -1,3 +1,7 @@
+var names = Object.fromEntries(
+    Object.entries(ids).map(([name, id]) => [id, name])
+);
+
 function create_table(type) {
     var table = document.getElementById("list_display");
     var x = 0
@@ -22,7 +26,8 @@ function create_table(type) {
 function while_over(x) {
     var th1s = document.getElementById(x);
     var th1s_i = document.getElementById(x+"im");
-    th1s.innerHTML = x;
+
+    th1s.innerHTML = names[x];
     th1s.style.display = "block";
     th1s_i.style.filter = "blur(3px)";
 }

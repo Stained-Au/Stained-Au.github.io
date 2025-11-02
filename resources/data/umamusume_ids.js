@@ -76,7 +76,7 @@ let ids = {
 	"Mejiro Ardan": 1071,
 	"Yaeno Muteki": 1072,
 	"Tsurumaru Tsuyoshi": 1073,
-	"Mejiro Bright": 1074
+	"Mejiro Bright": 1074,
 	"Daring Tact": 1075,
 	"Sakura Laurel": 1076,
 	"Narita Top Road": 1077,
@@ -93,7 +93,7 @@ let ids = {
 	"Satono Crown": 1088,
 	"Cheval Grand": 1089,
 	"Verxina": 1090,
-	"Vivlos": 1091
+	"Vivlos": 1091,
 	"Dantsu Flame": 1092,
 	"K.S.Miracle": 1093,
 	"Jungle Pocket": 1094,
