@@ -166,5 +166,5 @@ function still_mode() {
 	st1ngs.style.backgroundColor = "#440500ff";
 
 	h0rsel1st.style.backgroundColor = "#440500ff";
-	h0rsel1st.style.color = "#e6cdcbff";
+	h0rsel1st.style.color = "#b8827dff";
 }
