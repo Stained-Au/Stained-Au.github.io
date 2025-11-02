@@ -36,7 +36,20 @@ function create_table(type) {
         cell.innerHTML = "<div class = 'tag' id = '"+ i +"' onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")'></div><img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")' id = '"+ im +"'>";
         z++;
     }
-    for(var i = 9001; i<=9051; i++) {
+    for(var i = 9001; i<=9008; i++) {
+        if(names[i] === undefined){
+            continue;
+        }
+        if(z % 5 == 0) {
+            var row = table.insertRow(-1);
+        }
+        img = i + "-" + type + ".png";
+        cell = row.insertCell(-1);
+        im = i+"im";
+        cell.innerHTML = "<div class = 'tag' id = '"+ i +"' onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")'></div><img src = 'resources/images/all_the_honses/"+ i +"/"+ img +"'onmouseover = 'while_over("+ i +")' onmouseout = 'while_out("+ i +")' id = '"+ im +"'>";
+        z++;
+    }
+    for(var i = 9040; i<=9051; i++) {
         if(names[i] === undefined){
             continue;
         }
