@@ -3,6 +3,7 @@ function getIds(wanted) {
     var select = document.getElementsByClassName("selection");
     var tag = document.getElementsByClassName("tag");
     var settings_button = document.getElementById("settings_btn");
+    var line = document.getElementById("line");
 
     if(wanted == "back_button") {
         return back_button;
@@ -12,6 +13,8 @@ function getIds(wanted) {
         return tag;
     } else if (wanted == "settings_button") {
         return settings_button;
+    } else if (wanted == "line") {
+        return line;
     }
 }
 
@@ -28,9 +31,7 @@ function dark_mode() {
         background-color: #1f1f1f;
 	    color: #888888;
     `;
-    document.querySelectorAll("hr").forEach(hr => {
-        hr.style.borderColor = "#3b3b3b";
-    });
+    getIds("line").style.borderColor = "#3b3b3b";
     document.querySelectorAll("td").forEach(td => {
         td.style.cssText = `
         background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
@@ -67,9 +68,7 @@ function light_mode() {
         background-color: #ceccccff;
 	    color: #535353ff;
     `;
-    document.querySelectorAll("hr").forEach(hr => {
-        hr.style.borderColor = "#8b8b8bff";
-    });
+    getIds("line").style.borderColor = "#8b8b8bff";
     document.querySelectorAll("td").forEach(td => {
         td.style.cssText = `
         background-image: radial-gradient(circle at center, #ffffffff, #ceccccff, #bebebeff);
@@ -106,9 +105,7 @@ function purple_mode() {
         background-color: #2f234dff;
 	    color: #6f57a5ff;
     `;
-    document.querySelectorAll("hr").forEach(hr => {
-        hr.style.borderColor = "#6f57a5ff";
-    });
+    getIds("line").style.borderColor = "#6f57a5ff";
     document.querySelectorAll("td").forEach(td => {
         td.style.cssText = `
         background-image: radial-gradient(circle at center, #4a3e69ff, #443569ff, #2f234dff);
@@ -145,9 +142,7 @@ function matik_mode() {
         background-color: #7a6ad6b6;
 	    color: #3b256eff;
     `;
-    document.querySelectorAll("hr").forEach(hr => {
-        hr.style.borderColor = "#5e51acff";
-    });
+    getIds("line").style.borderColor = "#5e51acff";
     document.querySelectorAll("td").forEach(td => {
         td.style.cssText = `
         background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
@@ -184,9 +179,7 @@ function still_mode() {
         background-color: #440500ff;
 	    color: #b8827dff;
     `;
-    document.querySelectorAll("hr").forEach(hr => {
-        hr.style.borderColor = "#290300ff";
-    });
+    getIds("line").style.borderColor = "#290300ff";
     document.querySelectorAll("td").forEach(td => {
         td.style.cssText = `
         background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
