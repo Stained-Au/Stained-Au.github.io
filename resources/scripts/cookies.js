@@ -8,10 +8,23 @@ function clear_cookie(name) {
 	document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
 }
 
+/*
 function get_cookie(name) {
-	/*
 	let cookie = document.cookie;
 	return cookie.match("(?<= theme=)(.*?)(?=;)");
-	*/
 	return document.cookie;
+}
+*/
+
+function get_cookies() {
+
+	let kv_list = document.cookie.split(";");
+	cookies = {};
+	for(let i = 0; i < kv_list.length; i++) {
+		let kv = kv_list[i].split("=");
+
+		cookies[kv[0]] = kv[1];
+	}
+
+	return cookies;
 }
