@@ -1,6 +1,6 @@
 let ids = {
 	//No set ids
-	"Red Desire": 1,
+	//"Red Desire": 1,
 	
 	//Honse
 	"Special Week": 1001,
@@ -138,6 +138,7 @@ let ids = {
 	"Chrono Genesis": 1133,
 	"Curren Bouquetd'or": 1134,
 	"Stay Gold": 1135,
+	"Red Desire": 1136,                //Until they add her to the game
 	
 	//Other honse (2000)
 	"Happy Meek": 2001,
