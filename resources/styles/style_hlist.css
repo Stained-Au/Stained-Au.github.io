@@ -27,7 +27,7 @@ hr {
     height: auto;
     width: 16vw;
     border: 0.2vw solid #3b3b3b;
-    border-radius: 1vw;
+    /*  border-radius: 1vw;   */
     text-align: center;
     background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
 }
