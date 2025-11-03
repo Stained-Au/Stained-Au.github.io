@@ -1,0 +1,23 @@
+body {
+	background-color: #141414;
+	color: #c9c9c9;
+}
+#left_in, #left_out, #right {
+	background-color: #262626;
+}
+#mid {
+	background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff)	;
+    background-color: #1f1f1f;
+}
+.buttons {
+	background-color: #1f1f1f;
+	color: #888888;
+	border: 2px solid #4e4e4e;
+}
+.buttons:hover {
+	border-color: #444444;
+}
+.buttons:active {
+	border-color: #373737;
+	background-color: #1a1a1a;
+}

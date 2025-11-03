@@ -6,6 +6,7 @@
         <link rel = "icon" type = "image/x-icon" href = "resources/images/maticon.png">
         <link rel = "stylesheet" href = "resources/styles/style.css">
         <link rel = "stylesheet" href = "resources/styles/setting_styles.css">
+        <link rel = "stylesheet" href = "resources/styles/themes/theme_dark.css" id = "theme">
 
         <script src = "resources/scripts/cookies.js"></script>
         <script src = "resources/scripts/main_menu.js"></script>
@@ -18,13 +19,18 @@
 
         <section id = "left_in">
             <div>
-                <button type = "button" id = "m3nu_out" onclick = "menu_out()">⇨</button>
+                <button type = "button" id = "m3nu_out" onclick = "menu_out()" class = "buttons">⇨</button>
             </div>
         </section>
 
         <section id = "left_out">
             <div>
-                <button type = "button" id = "m3nu_in" onclick = "menu_in()">⇦</button>
+                <button type = "button" id = "m3nu_in" onclick = "menu_in()" class = "buttons">⇦</button>
+
+                <form action = "honse_naminh.html">
+                    <button type = "submit" id = "honse_naminh" class = "buttons">Honses Namink</button>
+                </form>
+
             </div>
         </section>
 
@@ -35,11 +41,11 @@
                 <hr>
                 <div id = "theme">
                     <h3>Theme:</h3>
-                <label><button id = "dark" onclick="dark_mode()"></button>Dark Mode</label><br>
-                <label><button id = "light" onclick="light_mode()"></button>Light Mode</label><br>
-                <label><button id = "purple" onclick="purple_mode()"></button>Purpel Mode</label><br>
-                <label><button id = "matik" onclick="matik_mode()"></button>Matik Mode</label><br>
-                <label><button id = "still" onclick="still_mode()"></button>Still Mode</label>
+                <label><button id = "dark" onclick="dark_mode()" class = "buttons"></button>Dark Mode</label><br>
+                <label><button id = "light" onclick="light_mode()" class = "buttons"></button>Light Mode</label><br>
+                <label><button id = "purple" onclick="purple_mode()" class = "buttons"></button>Purpel Mode</label><br>
+                <label><button id = "matik" onclick="matik_mode()" class = "buttons"></button>Matik Mode</label><br>
+                <label><button id = "still" onclick="still_mode()" class = "buttons"></button>Still Mode</label>
                 </div>
                 <hr>
                 <p>Matikanefukukitaru / Matikanetannhauser / Haru Urara / Special Week</p>
@@ -56,9 +62,9 @@
 
         <section id = "right">
             <form action = "all_horses_list.html">
-                <input type = "submit" value = "List" id = "horses_list">
+                <input type = "submit" value = "List" id = "horses_list" class = "buttons">
             </form>
-            <button type = "button" id = "settings_btn" onclick = "settings()"></button>
+            <button type = "button" id = "settings_btn" onclick = "settings()" class = "buttons"></button>
         </section>
 
     </body>
