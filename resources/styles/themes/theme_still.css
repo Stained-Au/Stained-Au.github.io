@@ -9,11 +9,15 @@ body {
     background-repeat: no-repeat;
 	background-size: cover;
 }
-.extended {
+.blur {
 	backdrop-filter: blur(5px);
 }
 #right {
 	background-color: #300300ff;
+	background-image: url("../../images/stiller.png");
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
 }
 #mid {
 	background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff)	;

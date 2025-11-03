@@ -9,11 +9,15 @@ body {
     background-repeat: no-repeat;
 	background-size: cover;
 }
-.extended {
+.blur, .blur_r {
 	backdrop-filter: blur(5px);
 }
 #right {
 	background-color: #55428F;
+	background-image: url("../../images/matigr.png");
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
 }
 #mid {
 	background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff)	;

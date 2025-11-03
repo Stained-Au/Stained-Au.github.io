@@ -3,9 +3,10 @@
     <head>
         <meta charset = "UTF-8">
         <title>Watashi wa Matikanefukukitaru</title>
-        <link rel = "stylesheet" href = "resources/styles/style_hlist.css">
-        <link rel = "stylesheet" href = "resources/styles/setting_styles.css">
         <link rel = "icon" type = "image/x-icon" href = "resources/images/maticon.png">
+        <link rel = "stylesheet" href = "resources/styles/list_styles/style_hlist.css">
+        <link rel = "stylesheet" href = "resources/styles/setting_styles.css">
+        <link rel = "stylesheet" href = "resources/styles/list_styles/themes/theme_dark.css" id = "theme">
 
         <script src = "resources/scripts/cookies.js"></script>
         <script src = "resources/data/umamusume_ids.js"></script>
@@ -18,15 +19,15 @@
 
             <div id = "settings">
                 <h2>Settings:</h2>
-                <button type = "button" id = "sett_close" onclick = "close_settings()"></button>
+                <button type = "button" id = "sett_close" onclick = "close_settings()" class = "buttons"></button>
                 <hr>
                 <div id = "theme">
                     <h3>Theme:</h3>
-                <label><button id = "dark" onclick="dark_mode()"></button>Dark Mode</label><br>
-                <label><button id = "light" onclick="light_mode()"></button>Light Mode</label><br>
-                <label><button id = "purple" onclick="purple_mode()"></button>Purpel Mode</label><br>
-                <label><button id = "matik" onclick="matik_mode()"></button>Matik Mode</label><br>
-                <label><button id = "still" onclick="still_mode()"></button>Still Mode</label>
+                <label><button id = "dark" onclick="dark_mode()" class = "buttons"></button>Dark Mode</label><br>
+                <label><button id = "light" onclick="light_mode()" class = "buttons"></button>Light Mode</label><br>
+                <label><button id = "purple" onclick="purple_mode()" class = "buttons"></button>Purpel Mode</label><br>
+                <label><button id = "matik" onclick="matik_mode()" class = "buttons"></button>Matik Mode</label><br>
+                <label><button id = "still" onclick="still_mode()" class = "buttons"></button>Still Mode</label>
                 </div>
                 <hr>
                 <p>Matikanefukukitaru / Matikanetannhauser / Haru Urara / Special Week</p>
@@ -38,14 +39,14 @@
             </div>
 
             <form action = "index.html">
-                <input type = "submit" value = "Back" id = "back">
+                <input type = "submit" value = "Back" id = "back" class = "buttons">
             </form>
 
-            <button type = "button" class = "selection" onclick = "create_table('school')">School</button>
-            <button type = "button" class = "selection" onclick = "create_table('school-full')">School Full</button>
-            <button type = "button" class = "selection" onclick = "create_table('race')">Race</button>
-            <button type = "button" class = "selection" onclick = "create_table('race-full')">Race Full</button>
-            <button type = "button" id = "settings_btn" onclick = "settings()"></button>
+            <button type = "button" class = "selection buttons" onclick = "create_table('school')">School</button>
+            <button type = "button" class = "selection buttons" onclick = "create_table('school-full')">School Full</button>
+            <button type = "button" class = "selection buttons" onclick = "create_table('race')">Race</button>
+            <button type = "button" class = "selection buttons" onclick = "create_table('race-full')">Race Full</button>
+            <button type = "button" id = "settings_btn" class = "buttons" onclick = "settings()"></button>
             <hr id = "line">
 
             <table id = "list_display"></table>

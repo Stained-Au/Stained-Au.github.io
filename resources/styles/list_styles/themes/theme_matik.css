@@ -1,0 +1,33 @@
+body {
+	background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
+    background-color: #9387d6ff;
+    color: #3b256eff;
+}
+#line {
+    border-color: #5e51acff;
+}
+#list_display td {
+    border: 0.2vw solid #544798;
+    background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
+}
+#list_display td:hover {
+    border-color: #5a4ca1;
+    background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
+}
+.tag {
+    background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
+    box-shadow: 0 0 5px 5px #5e51acff;
+}
+.buttons {
+	background-color: #7a6ad6d8;
+	color: #3b256eff;
+	border: 2px solid #442a7e;
+}
+.buttons:hover {
+	background-color: #7f6eded8;
+	border-color: #5d38ac;
+}
+.buttons:active {
+	border-color: #503193;
+	background-color: #6154abc4;
+}

@@ -1,6 +1,7 @@
 body {
-    background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
-    color: #888888;
+    font-weight: bold;
+    /*background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
+    color: #888888;*/
 }
 #back {
 	width: 2vw;
@@ -8,13 +9,13 @@ body {
 	margin: 0.5vw;
 	font-size: 0.5vw;
 	border-radius: 10px;
-	background-color: #1f1f1f;
-	color: #888888;
+	/*background-color: #1f1f1f;
+	color: #888888;*/
     float: left;
     margin-right: 10vw;
 }
 hr {
-    border-color: #3b3b3b;
+    /*border-color: #3b3b3b;*/
     clear: both;
 }
 #list_display img {
@@ -25,37 +26,38 @@ hr {
 #list_display td {
     height: 15vw;
     width: 16vw;
-    border: 0.2vw solid #3b3b3b;
-    /*  border-radius: 1vw;   */
     text-align: center;
-    background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
+    /*  border-radius: 1vw;   */
+    /*border: 0.2vw solid #3b3b3b;
+    background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);*/
 }
 #list_display {
     margin: auto;
     border-collapse: separate;
     border-spacing: 3.5vw;
 }
-#list_display td:hover {
+/*#list_display td:hover {
     border-color: #666666;
     background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff);
-}
+}*/
 .selection {
     width: 7vw;
 	height: 1.5vw;
 	margin: 0.5vw;
 	font-size: 1vw;
 	border-radius: 10px;
-	background-color: #1f1f1f;
-	color: #888888;
+    padding-bottom: 1vw;
+	/*background-color: #1f1f1f;
+	color: #888888;*/
     float: left;
 }
 .tag {
     height: 4vw;
-    width: 15.1vw;
+    width: 15.25vw;
     position: absolute;
     margin-top: 5vw;
     z-index: 99;
-    background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff);
+    /*background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff);*/
     font-size: 1.5vw;
     text-align: center;
     padding-top: 1.5vw;
@@ -65,8 +67,12 @@ hr {
 	height: 1.7vw;
 	width: 1.7vw;
 	border-radius: 1vw;
-	background-color: #1f1f1f;
+	/*background-color: #1f1f1f;*/
     float: right;
     margin-top: 0.5vw;
     margin-right: 0.5vw;
+}
+.buttons {
+	box-shadow: 0px 5px 20px 5px #00000046;
+	font-weight: bold;
 }
