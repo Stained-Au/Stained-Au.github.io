@@ -15,6 +15,7 @@ body {
 	border: 2px solid #9f9f9f;
 }
 .buttons:hover {
+	background-color: #b0b0b0;
 	border-color: #868686;
 }
 .buttons:active {

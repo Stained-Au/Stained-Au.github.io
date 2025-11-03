@@ -9,6 +9,9 @@ body {
     background-repeat: no-repeat;
 	background-size: cover;
 }
+.extended {
+	backdrop-filter: blur(5px);
+}
 #right {
 	background-color: #55428F;
 }
@@ -17,11 +20,12 @@ body {
     background-color: #ceccccff;
 }
 .buttons {
-	background-color: #7a6ad6b6;
+	background-color: #7a6ad6d8;
 	color: #3b256eff;
 	border: 2px solid #442a7e;
 }
 .buttons:hover {
+	background-color: #7f6eded8;
 	border-color: #5d38ac;
 }
 .buttons:active {
