@@ -2,7 +2,12 @@ body {
 	background-color: #2b004eff;
 	color: #c9c9c9;
 }
-#left_in, #left_out, #right {
+#right {
+	background-image: linear-gradient(to right, #392a5cff, #2f234dff);
+	background-color: #392a5cff;
+}
+#left_in, #left_out {
+	background-image: linear-gradient(to right, #2f234dff, #392a5cff);
 	background-color: #392a5cff;
 }
 #mid {

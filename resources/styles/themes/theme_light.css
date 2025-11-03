@@ -2,8 +2,13 @@ body {
 	background-color: #ccccccff;
 	color: #000000ff;
 }
-#left_in, #left_out, #right {
-	background-color: #a8a8a8ff;
+#right {
+	background-image: linear-gradient(to right, #a8a8a8ff, #bebebeff);
+	background-color: #ceccccff;
+}
+#left_in, #left_out {
+	background-image: linear-gradient(to right, #bebebeff, #a8a8a8ff);
+	background-color: #ceccccff;
 }
 #mid {
 	background-image: radial-gradient(circle at center, #ffffffff, #ceccccff, #bebebeff)	;
