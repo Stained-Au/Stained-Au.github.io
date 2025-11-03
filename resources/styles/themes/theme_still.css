@@ -4,7 +4,7 @@ body {
 }
 #left_in, #left_out {
     background-color: #300300ff;
-    background-image: url("resources/images/stille.png");
+    background-image: url("../../images/stille.png");
 	background-position: center;
     background-repeat: no-repeat;
 	background-size: cover;

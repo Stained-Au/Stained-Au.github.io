@@ -4,7 +4,7 @@ body {
 }
 #left_in, #left_out {
     background-color: #55428F;
-    background-image: url("resources/images/matig.png");
+    background-image: url("../../images/matig.png");
 	background-position: center;
     background-repeat: no-repeat;
 	background-size: cover;
