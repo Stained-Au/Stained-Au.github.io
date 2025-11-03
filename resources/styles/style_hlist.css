@@ -23,8 +23,7 @@ hr {
     border-radius: 1vw;
 }
 #list_display td {
-    min-height: 16vw;
-    height: auto;
+    height: 15vw;
     width: 16vw;
     border: 0.2vw solid #3b3b3b;
     /*  border-radius: 1vw;   */
