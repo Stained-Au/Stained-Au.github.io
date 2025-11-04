@@ -1,6 +1,7 @@
 body {
 	background-color: #2b004eff;
 	color: #c9c9c9;
+	scrollbar-color: #6f57a5ff #2f234dff;
 }
 #right {
 	background-image: linear-gradient(to right, #392a5cff, #2f234dff);

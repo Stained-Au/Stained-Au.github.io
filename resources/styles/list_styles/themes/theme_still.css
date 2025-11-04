@@ -2,6 +2,7 @@ body {
 	background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
     background-color: #ceccccff;
     color: #c17269;
+    scrollbar-color: #c17269 #360400ff;
 }
 #line, #line_imago {
     border-color: #250200;

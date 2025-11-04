@@ -110,7 +110,7 @@ hr {
     text-align: center;
     box-shadow: 0px 0px 15px 5px #000000b2;
     border-radius: 1vw;
-    overflow: scroll;
+    overflow: auto;
 }
 #obok {
     width: 41.5%;
@@ -119,11 +119,14 @@ hr {
     text-align: center;
     box-shadow: 0px 0px 15px 5px #000000b2;
     border-radius: 1vw;
-    overflow: scroll;
+    overflow: auto;
 }
 #obok b {
     font-size: 150%;
     font-weight: 900;
+}
+#obok span {
+    line-height: 100%;
 }
 #imago img {
     height: 95%;

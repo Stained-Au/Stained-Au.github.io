@@ -1,6 +1,7 @@
 body {
 	background-color: #1f0000ff;
 	color: #c9c9c9;
+	scrollbar-color: #c17269 #360400ff;
 }
 #left_in, #left_out {
     background-color: #300300ff;
