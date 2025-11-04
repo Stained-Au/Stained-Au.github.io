@@ -3,7 +3,7 @@ body {
     background-color: #ccccccff;
     color: #535353ff;
 }
-#line {
+#line, #line_imago {
     border-color: #c0c0c0;
 }
 #list_display td {
@@ -31,4 +31,8 @@ body {
 	border-color: #606060;
 	background-color: #9f9f9f;
     color: #ccccccff;
+}
+#show, #imago, #obok {
+    border: 0.2vw solid #8b8b8bff;
+    background-image: radial-gradient(circle at center, #ffffffff, #ceccccff, #bebebeff);
 }

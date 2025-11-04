@@ -10,6 +10,7 @@
 
         <script src = "resources/scripts/cookies.js"></script>
         <script src = "resources/data/umamusume_ids.js"></script>
+        <script src = "resources/data/umamusume_data.js"></script>
         <script src = "resources/scripts/list_table.js"></script>
         <script src = "resources/scripts/all_horse_themes.js"></script>
         <script src = "resources/scripts/settings.js"></script>
@@ -48,6 +49,38 @@
             <button type = "button" class = "selection buttons" onclick = "create_table('race-full')">Race Full</button>
             <button type = "button" id = "settings_btn" class = "buttons" onclick = "settings()"></button>
             <hr id = "line">
+
+            <div id = "show">
+                <button type = "button" onclick = "hide_image()" class = "buttons" id = "hide_button"></button>
+                <div id = "imago">
+                    <div id = "left_imago_strip"></div>
+                    <img src = "right_imago_strip" id = "image">
+                    <div></div>
+                </div>
+                <div id = "obok">
+                    <h1 id = "name_of_horse"></h1>
+                    <h3 id = "id_of_horse"></h3>
+                    <h2 id = "outfit_type"></h2>
+                    <hr id = "line_imago">
+                    <div id = "data">
+                        <p> <b>Strengths: </b> <span id = "strengths"></span> </p>
+                        <p> <b>Weaknesses: </b> <span id = "weaknesses"></span> </p>
+                        <p> <b>Ears: </b> <span id = "ears"></span></p>
+                        <p> <b>Tail: </b> <span id = "tail"></span></p>
+                        <p> <b>Family: </b> <span id = "family"></span></p>
+                        <p> <b>Rule: </b> <span id = "rule"></span></p>
+                        <p> <b>Phone background: </b> <span id = "phone_background"></span></p>
+                        <p> <b>Before a race: </b> <span id = "before_a_race"></span></p>
+                        <p> <b>Birthday: </b> <span id = "birthday"></span></p>
+                        <p> <b>Roommate: </b> <span id = "roommate"></span></p>
+                        <p> <b>Height: </b> <span id = "height"></span></p>
+                        <p> <b>Three sizes: </b> <span id = "three_sizes"></span></p>
+                        <p> <b>Shoe size: </b> <span id = "shoe_size"></span></p>
+                        <p> <b>Weight: </b> <span id = "weight"></span></p>
+                        <p> <b>Emoji: </b> <span id = "emoji"></span></p>
+                    </div>
+                </div>
+            </div>
 
             <table id = "list_display"></table>
     </body>

@@ -43,6 +43,7 @@ body {
 	height: 100vh;
 	/*background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff)	;*/
 	border-radius: 10px;
+	overflow: hidden;
 }
 #right {
 	/*background-color: #262626;*/

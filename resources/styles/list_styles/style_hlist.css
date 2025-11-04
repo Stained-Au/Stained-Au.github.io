@@ -27,6 +27,8 @@ hr {
     height: 15vw;
     width: 16vw;
     text-align: center;
+    border-radius: 0.3vw;
+    user-select: none;
     /*  border-radius: 1vw;   */
     /*border: 0.2vw solid #3b3b3b;
     background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);*/
@@ -75,4 +77,84 @@ hr {
 .buttons {
 	box-shadow: 0px 5px 20px 5px #00000046;
 	font-weight: bold;
+}
+#show {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    z-index: 100;
+    box-shadow: 0px 0px 350px 50px #000000;
+    border-radius: 0.7vw;
+    display: none;
+}
+#hide_button {
+    float: right;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 0.3vw;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+}
+#imago, #obok {
+    float: left;
+}
+#imago {
+    width: 50%;
+    height: 90%;
+    margin: 2vw;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px #000000b2;
+    border-radius: 1vw;
+    overflow: scroll;
+}
+#obok {
+    width: 41.5%;
+    height: 90%;
+    margin: 2.5% 0 2.5% 0;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px #000000b2;
+    border-radius: 1vw;
+    overflow: scroll;
+}
+#obok b {
+    font-size: 150%;
+    font-weight: 900;
+}
+#imago img {
+    height: 95%;
+    position: relative;
+    bottom: -5%;
+}
+#name_of_horse {
+    font-size: 2vw;
+    line-height: 25%;
+}
+#id_of_horse {
+    font-size: 1vw;
+    line-height: 30%;
+}
+#outfit_type {
+    font-size: 1vw;
+    line-height: 5%;
+}
+#left_imago_strip, #right_imago_strip {
+    position: absolute;
+    height: 100%;
+    width: 5%;
+}
+#left_imago_strip {
+    float: left;
+}
+#right_imago_strip {
+    float: right;
+}
+#data {
+    text-align: left;
+    line-height: 1vw;
+    margin-left: 0.7vw;
 }
