@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 99.9vw;
+}
+#right {
+    width: 3%;
+    float: right;
+    height: 100vh;
+	border-radius: 10px 0 0 10px;
+}
+#settings_btn {
+	height: 1.7vw;
+	width: 1.7vw;
+	border-radius: 1vw;
+	margin: 23%;
+	position: relative;
+	bottom: -88vh;
+}
+#back {
+	width: 2vw;
+	height: 2vw;
+	margin: 0.5vw;
+	font-size: 0.5vw;
+	border-radius: 10px;
+    float: left;
+    margin-right: 10vw;
+}
+.blur {
+	height: 100%;
+}

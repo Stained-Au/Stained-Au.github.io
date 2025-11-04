@@ -106,3 +106,13 @@ body {
 	box-shadow: 0px 5px 20px 5px #00000046;
 	font-weight: bold;
 }
+#h_n {
+	width: 2.5vw;
+	height: 2vw;
+	position: relative;
+	top: 1vw;
+	left: 1vw;
+	margin: auto;
+	font-size: 0.8vw;
+	border-radius: 1vw;
+}

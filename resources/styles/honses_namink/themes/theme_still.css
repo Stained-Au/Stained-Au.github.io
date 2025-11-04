@@ -1,0 +1,28 @@
+body {
+	background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+    background-color: #ceccccff;
+    color: #c17269;
+}
+#right {
+	background-color: #300300ff;
+	background-image: url("../../../images/stiller.png");
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.blur {
+	backdrop-filter: blur(5px);
+}
+.buttons {
+	background-color: #440500df;
+	color: #935c56;
+	border: 2px solid #250200;
+}
+.buttons:hover {
+	background-color: #490500df;
+	border-color: #2e0300;
+}
+.buttons:active {
+	border-color: #230000;
+	background-color: #390400;
+}
