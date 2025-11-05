@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 99.9vw;
+	overflow-x: hidden;
+}
+#right {
+	position: fixed;
+	right: 0;
+    width: 3%;
+    float: right;
+    height: 100vh;
+	border-radius: 10px 0 0 10px;
+}
+#settings_btn {
+	height: 1.7vw;
+	width: 1.7vw;
+	border-radius: 1vw;
+	margin: 23%;
+	position: relative;
+	bottom: -88vh;
+}
+#back {
+	width: 2vw;
+	height: 2vw;
+	margin: 0.5vw;
+	font-size: 0.5vw;
+	border-radius: 10px;
+    float: left;
+    margin-right: 10vw;
+}
+.blur {
+	height: 100%;
+}
+#center {
+	float: left;
+	width: 97%;
+}
+#guessing {
+	margin: auto;
+	/*outline: 1px solid #88888822;*/
+	width: 50vw;
+	text-align: center;
+	min-height: 80vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+input[type=text] {
+	text-align: center;
+
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 25%;
+}
+#submit_button {
+	width: 25%;
+}
+
+#correct_text {
+	font-weight: bold;
+	margin-top: 20px;
+}
+#correct_text.correct {
+	color: #0C0;
+}
+#correct_text.incorrect {
+	color: #C00;
+}
+
+#horse_data {
+	margin-top: 0px;
+}
+
+.guessing_image {
+	width: 40%;
+}
+
+.data_key {
+	font-weight: bold;
+}
+.data_value {
+	font-family: Consolas;
+}
+.data_entry {
+	width: 75%;
+	margin: auto;
+}
+
+hr {
+	border: 1px solid #777;
+	width: 75%;
+}
+.light_hr {
+	border: 1px solid #444;
+	width: 75%;
+}
+/*
+.correcting_text_correct {
+	font-family: Consolas;
+}
+*/
+.correcting_text_guess {
+	font-family: Consolas;
+}

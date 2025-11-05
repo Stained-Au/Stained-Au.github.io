@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Watashi wa Matikanefukukitaru</title>
+        <link rel = "icon" type = "image/x-icon" href = "resources/images/maticon.png">
+        <link rel = "stylesheet" href = "resources/styles/honses_namink/style.css">
+        <link rel = "stylesheet" href = "resources/styles/setting_styles.css">
+        <link rel = "stylesheet" href = "resources/styles/honses_namink/themes/theme_dark.css" id = "theme">
+
+        <script src = "resources/scripts/cookies.js"></script>
+        <script src = "resources/scripts/left_themes.js"></script>
+        <script src = "resources/scripts/settings.js"></script>
+
+        <script src = "resources/data/umamusume_data.js"></script>
+        <script src = "resources/data/umamusume_ids.js"></script>
+        <script src = "resources/scripts/util.js"></script>
+        <script src = "resources/scripts/horse_naming.js"></script>
+    </head>
+
+    <body>
+        <div id = "settings">
+            <h2>Settings:</h2>
+            <button type = "button" id = "sett_close" onclick = "close_settings()" class = "buttons"></button>
+            <hr>
+            <div id = "theme">
+                <h3>Theme:</h3>
+            <label><button id = "dark" onclick="dark_mode()" class = "buttons"></button>Dark Mode</label><br>
+            <label><button id = "light" onclick="light_mode()" class = "buttons"></button>Light Mode</label><br>
+            <label><button id = "purple" onclick="purple_mode()" class = "buttons"></button>Purpel Mode</label><br>
+            <label><button id = "matik" onclick="matik_mode()" class = "buttons"></button>Matik Mode</label><br>
+            <label><button id = "still" onclick="still_mode()" class = "buttons"></button>Still Mode</label>
+            </div>
+            <hr>
+            <p>Matikanefukukitaru / Matikanetannhauser / Haru Urara / Special Week</p>
+            <p>Agnes Digital / Fuji Kiseki / Kitasan Black / Furioso / Sugar Lights</p>
+            <p>Curren Bouquetd'or / Meisho Doto / Daiwa Scarlet / Biwa Hayahide</p>
+            <p>Red Desire / Silence Suzuka / Grass Wonder / King Halo / Hishi Amazon</p>
+            <p>Loves Only You / Speed Symboli / Satono Diamond / Almond Eye</p>
+            <p>Still In Love / Tokai Teio / Jungle Pocket / Mejiro McQueen</p>
+        </div>
+
+        <div id = "center">
+            <div id = "guessing">
+
+                <hr class = "light_hr">
+
+                <div id = "horse_data">
+
+                </div>
+
+                <hr>
+
+                <input type = "text" id = "guess_input"><br>
+                <button type = "button" onclick = "submitGuess()" class = "buttons" id = "submit_button">
+                    Submit
+                </button>
+                <div id = "correct_text"></div>
+                <div id = "correcting_text"></div>
+
+            </div>
+        </div>
+
+        <div id = "right">
+            <div class = "blur">
+                <form action = "index.html">
+                    <input type = "submit" value = "Back" id = "back" class = "buttons">
+                </form>
+                <button type = "button" id = "settings_btn" class = "buttons" onclick = "settings()"></button>
+            </div>
+        </div>
+    </body>
+</html>

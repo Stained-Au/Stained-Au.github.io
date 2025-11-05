@@ -1,0 +1,181 @@
+let current_horse = {};
+let last_correct = null;
+
+let selected_data_keys = [];
+
+window.addEventListener("load", function() {
+	selected_data_keys = parseDataKeyString(getParams().mode);
+
+	generateQuestion(getRandomHorseData());
+});
+
+document.addEventListener("keydown", function(event) {
+	if(event.key == "Enter") {
+		submitGuess();
+	}
+});
+
+function getRandomHorseData() {
+	let failed = false;
+	while(true) {
+		let random_id = Math.round(Math.random() * data.horses.length);
+		let random_data = data.horses[random_id];
+
+		//selected_data_keys.forEach(data_key =>
+		for(let i = 0; i < selected_data_keys.length; i++)	{
+			data_key = selected_data_keys[i];
+
+			failed = (random_data[data_key] == "null");
+			console.log(random_data[data_key], data_key, failed);
+			if(failed) {
+				break;
+			}
+		}
+		console.log("failed", failed);
+		if(!failed) {
+			return random_data;
+		}
+	}
+}
+
+function generateQuestion(horse_data) {
+	let area = document.getElementById("horse_data");
+	let elements = "";
+
+	current_horse = horse_data;
+
+	for(let i = 0; i < selected_data_keys.length; i++) {
+		let hr = i != selected_data_keys.length - 1;
+		elements += generateHorseDataEntry(selected_data_keys[i], hr);
+	}
+
+	area.innerHTML = elements;
+
+	let correct_text = document.getElementById("correct_text");
+	switch(last_correct) {
+		case true:
+			correct_text.innerHTML = "Correct";
+			correct_text.classList = ["correct"];
+			break;
+		case false:
+			correct_text.innerHTML = "Incorrect";
+			correct_text.classList = ["incorrect"];
+			break;
+
+		default:
+			correct_text.innerHTML = "";
+			correct_text.classList = [];
+			break;
+	}
+}
+
+function generateHorseDataEntry(key, add_hr = true) {
+	let entry = "";
+
+	entry += '<div class = "data_entry">'
+
+	if(key == "school" || key == "race") {
+		let id = ids[current_horse.name];
+		entry = '<img src = "resources/images/all_the_honses/' + id + "/" + id + "-" + key + '.png" class = "guessing_image">';
+	} else {
+
+		let formatted_key = key.replaceAll("_", " ");
+		let initial_letter = formatted_key.charAt(0).toUpperCase();
+
+		formatted_key = initial_letter + formatted_key.substring(1, formatted_key.length);
+
+		entry += '<span class = "data_key">' + formatted_key + ': </span><span class = "data_value">' + current_horse[key] + '</span>';
+	}
+	entry += '</div>';
+	if(add_hr) {
+		entry += '<hr class = "light_hr">';
+	}
+
+	return entry;
+}
+
+function submitGuess() {
+	let input = document.getElementById("guess_input");
+	let correcting_text = document.getElementById("correcting_text");
+
+	if(input.value != "") {
+		let correct = current_horse.name.toLowerCase().replaceAll(" ", "");
+		let guess_raw = input.value;
+		let guess = input.value.toLowerCase().replaceAll(" ", "");
+
+		last_correct = guess === correct;
+		if(last_correct) {
+			correcting_text.innerHTML = "";
+		} else {
+			correcting_text.innerHTML = '<span class = "correcting_text">It was </span><span class = "correcting_text_correct">' + current_horse.name + '</span><br><br><span class = "correcting_text">You entered </span><span class = "correcting_text_guess">' + guess_raw + '</span>';
+		}
+
+		generateQuestion(getRandomHorseData());
+		input.value = "";
+	}
+}
+
+let data_key_chars = {
+	"n": "name",
+	"S": "strengths",
+	"W": "weaknesses",
+	"E": "ears",
+	"T": "tail",
+	"f": "family",
+	"R": "rule",
+	"p": "phone_background",
+	"B": "birthday",
+	"b": "before_a_race",
+	"r": "roommate",
+	"h": "height",
+	"t": "three_sizes",
+	"s": "shoe_size",
+	"w": "weight",
+	"e": "emoji",
+	
+	"i": "school",
+	"I": "race"//,
+	//"x": "random"
+}
+
+function parseDataKeyString(data_key_string) {
+	let keys = [];
+
+	/*
+	entries.forEach(data_key_char => {
+		if(str_has(data_key_string, data_key_char)) {
+			keys.append(data_key_chars[data_key_char]);
+		}
+	});
+	*/
+
+	for (const [key, value] of Object.entries(data_key_chars)) {
+  		if(strHas(data_key_string, key)) {
+			keys.push(value);
+		}
+	}
+
+	return keys;
+}
+
+/*
+name
+strengths
+weaknesses
+ears
+tail
+family
+rule
+phone_background
+before_a_race
+birthday
+roommate
+height
+three_sizes
+shoe_size
+weight
+emoji
+
+n S W E T f R p B b r h t s w e
+
+*/

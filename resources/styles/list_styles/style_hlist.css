@@ -1,0 +1,156 @@
+body {
+    font-weight: bold;
+    /*background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
+    color: #888888;*/
+}
+#back {
+	width: 2vw;
+	height: 2vw;
+	margin: 0.5vw;
+	font-size: 0.5vw;
+	border-radius: 10px;
+	/*background-color: #1f1f1f;
+	color: #888888;*/
+    float: left;
+    margin-right: 10vw;
+}
+hr {
+    /*border-color: #3b3b3b;*/
+    clear: both;
+}
+#list_display img {
+    width: 15vw;
+    margin: auto;
+    border-radius: 0.3vw;
+    position: relative;
+    bottom: -4px;
+}
+#list_display td {
+    height: 15vw;
+    width: 16vw;
+    text-align: center;
+    border-radius: 0.3vw;
+    user-select: none;
+    /*  border-radius: 1vw;   */
+    /*border: 0.2vw solid #3b3b3b;
+    background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);*/
+}
+#list_display {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 3.5vw;
+}
+/*#list_display td:hover {
+    border-color: #666666;
+    background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff);
+}*/
+.selection {
+    width: 7vw;
+	height: 1.5vw;
+	margin: 0.5vw;
+	font-size: 1vw;
+	border-radius: 10px;
+    padding-bottom: 1vw;
+	/*background-color: #1f1f1f;
+	color: #888888;*/
+    float: left;
+}
+.tag {
+    height: 4vw;
+    width: 15.20vw;
+    position: absolute;
+    margin-top: 5vw;
+    z-index: 99;
+    /*background-image: radial-gradient(circle at center, #333333ff, #303030ff, #222222ff);*/
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 1.5vw;
+    display: none;
+}
+#settings_btn {
+	height: 1.7vw;
+	width: 1.7vw;
+	border-radius: 1vw;
+	/*background-color: #1f1f1f;*/
+    float: right;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+}
+.buttons {
+	box-shadow: 0px 5px 20px 5px #00000046;
+	font-weight: bold;
+}
+#show {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    z-index: 100;
+    box-shadow: 0px 0px 350px 50px #000000;
+    border-radius: 0.7vw;
+    display: none;
+}
+#hide_button {
+    float: right;
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    border-radius: 0.3vw;
+    top: 0.5vw;
+    right: 0.5vw;
+}
+#imago, #obok {
+    float: left;
+}
+#imago {
+    width: 50%;
+    height: 90%;
+    margin: 2vw;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px #000000b2;
+    border-radius: 1vw;
+    overflow: auto;
+}
+#obok {
+    width: 41.5%;
+    height: 90%;
+    margin: 2vw 0 2vw 0;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px #000000b2;
+    border-radius: 1vw;
+    overflow: auto;
+}
+#obok b {
+    font-size: 1vw;
+    font-weight: 900;
+}
+#obok span {
+    font-size: 0.7vw;
+    line-height: 0.8vw;
+}
+#imago img {
+    height: 95%;
+    position: relative;
+    bottom: -5%;
+}
+#name_of_horse {
+    font-size: 2vw;
+    line-height: 25%;
+}
+#id_of_horse {
+    font-size: 1vw;
+    line-height: 30%;
+}
+#outfit_type {
+    font-size: 1vw;
+    line-height: 5%;
+}
+#data {
+    text-align: left;
+    line-height: 1vw;
+    margin-left: 0.7vw;
+}

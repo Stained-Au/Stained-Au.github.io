@@ -1,0 +1,23 @@
+body {
+	background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
+    background-color: #ceccccff;
+    color: #888888;
+	scrollbar-color: #888888 #1d1d1dff;
+}
+#right {
+	background-image: linear-gradient(to right, #262626, #242424ff);
+	background-color: #1f1f1f;
+}
+.buttons {
+	background-color: #1f1f1f;
+	color: #888888;
+	border: 2px solid #4e4e4e;
+}
+.buttons:hover {
+	background-color: #222222;
+	border-color: #444444;
+}
+.buttons:active {
+	border-color: #373737;
+	background-color: #1a1a1a;
+}

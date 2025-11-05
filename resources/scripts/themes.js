@@ -1,3 +1,47 @@
+function dark_mode() {
+	set_perm_cookie("theme", "dark");
+	var theme = document.getElementById("theme");
+	theme.href = "resources/styles/themes/theme_dark.css"
+	document.getElementById("test_image_mid").src = "resources/images/satono.png";
+}
+
+function light_mode() {
+	set_perm_cookie("theme", "light");
+	var theme = document.getElementById("theme");
+	theme.href = "resources/styles/themes/theme_light.css"
+	document.getElementById("test_image_mid").src = "resources/images/rice.png";
+}
+
+function purple_mode() {
+	set_perm_cookie("theme", "purple");
+	var theme = document.getElementById("theme");
+	theme.href = "resources/styles/themes/theme_purple.css"
+	document.getElementById("test_image_mid").src = "resources/images/sweep.png";
+}
+
+function matik_mode() {
+	set_perm_cookie("theme", "matik");
+	var theme = document.getElementById("theme");
+	theme.href = "resources/styles/themes/theme_matik.css"
+	document.getElementById("test_image_mid").src = "resources/images/matik.png";
+}
+
+function still_mode() {
+	set_perm_cookie("theme", "still");
+	var theme = document.getElementById("theme");
+	theme.href = "resources/styles/themes/theme_still.css"
+	document.getElementById("test_image_mid").src = "resources/images/still.png";
+}
+
+
+
+
+
+
+
+
+
+/*
 function getIds(wanted) {
 	var left_strip_hidden = document.getElementById("left_in");
 	var left_strip_extended = document.getElementById("left_out");
@@ -242,3 +286,4 @@ function still_mode() {
 		color: #b8827dff;
 	`;
 }
+*/

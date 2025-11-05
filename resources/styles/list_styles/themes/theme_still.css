@@ -1,0 +1,38 @@
+body {
+	background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+    background-color: #ceccccff;
+    color: #c17269;
+    scrollbar-color: #c17269 #360400ff;
+}
+#line, #line_imago {
+    border-color: #250200;
+}
+#list_display td {
+    border: 0.2vw solid #250200;
+    background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+}
+#list_display td:hover {
+    border-color: #2e0300;
+    background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+}
+.tag {
+    background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+    box-shadow: 0 0 5px 5px #360400ff;
+}
+.buttons {
+	background-color: #440500df;
+	color: #935c56;
+	border: 2px solid #250200;
+}
+.buttons:hover {
+	background-color: #490500df;
+	border-color: #2e0300;
+}
+.buttons:active {
+	border-color: #230000;
+	background-color: #390400;
+}
+#show, #imago, #obok {
+    border: 0.2vw solid #250200;
+    background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+}
