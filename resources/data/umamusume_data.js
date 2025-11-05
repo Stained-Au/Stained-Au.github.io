@@ -401,7 +401,7 @@ let data = {
 			"strengths": "Selfies, piano",
 			"weaknesses": "Eating snacks with tea",
 			"ears": "If she beckons you, it's because she wants to be spoiled",
-			"tail": "Ultra-soft and fluffy&#8212;almost captivatingly so",
+			"tail": "Ultra-soft and fluffy - almost captivatingly so",
 			"family": "They miss their daughter so much, they've applied for positions at Tracen Academy",
 			"rule": "\"I always make sure the food pics I take are the cutest ♪\"",
 			"phone_background": "\"Do you remember this picture? ...Yeah, from that one time ♪\"",
