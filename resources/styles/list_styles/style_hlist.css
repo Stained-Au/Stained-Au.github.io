@@ -21,7 +21,9 @@ hr {
 #list_display img {
     width: 15vw;
     margin: auto;
-    border-radius: 1vw;
+    border-radius: 0.3vw;
+    position: relative;
+    bottom: -4px;
 }
 #list_display td {
     height: 15vw;
