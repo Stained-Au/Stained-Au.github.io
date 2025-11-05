@@ -21,3 +21,21 @@ body {
 	border-color: #373737;
 	background-color: #1a1a1a;
 }
+hr {
+	border: 1px solid #777;
+}
+.light_hr {
+	border: 1px solid #444;
+}
+#left {
+	background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
+	outline: 2px solid #4e4e4e;
+}
+input[type = text] {
+	background-image: radial-gradient(circle at center, #242424ff, #202020ff, #1d1d1dff);
+	color: #888888;
+	border-color: #4e4e4e;
+}
+input[type = checkbox] {
+	accent-color: #1a1a1a;
+}

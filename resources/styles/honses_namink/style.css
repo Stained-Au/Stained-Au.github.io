@@ -78,20 +78,22 @@ input[type=text] {
 .data_key {
 	font-weight: bold;
 }
+
 .data_value {
 	font-family: Consolas;
 }
+
 .data_entry {
 	width: 75%;
 	margin: auto;
 }
 
 hr {
-	border: 1px solid #777;
+	/*border: 1px solid #777;*/
 	width: 75%;
 }
 .light_hr {
-	border: 1px solid #444;
+	/*border: 1px solid #444;*/
 	width: 75%;
 }
 /*
@@ -105,11 +107,15 @@ hr {
 
 #left {
 	position: absolute;
-	left: 0;
-	top: 0;
-	background-color: #333;
-	width: 20vw;
-	height: 30vw;
+	left: 5vw;
+	top: 5vw;
+	/*background-color: #333;*/
+	width: 15vw;
+	min-height: 17vw;
+	padding-left: 1.5vw;
+	padding-top: 1.5vw;
+	border-radius: 0.3vw;
+	display: none;
 }
 
 #data_key_string {
@@ -119,4 +125,15 @@ hr {
 #summary {
 	font-weight: bold;
 	font-size: 300%;
+	width: 70%;
+}
+
+#menu_mode {
+	position: fixed;
+	left: 1vw;
+	top: 1vw;
+	border-radius: 1vw;
+	height: 2vw;
+	width: 2vw;
+	text-align: center;
 }

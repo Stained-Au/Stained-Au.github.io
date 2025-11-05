@@ -27,3 +27,21 @@ body {
 	border-color: #503193;
 	background-color: #6154abc4;
 }
+.light_hr {
+	border: 1px solid #5836a0;
+}
+hr {
+	border: 1px solid #785eaf;
+}
+#left {
+	background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
+	outline: 2px solid #442a7e;
+}
+input[type = text] {
+	background-image: radial-gradient(circle at center, #a5a1e0ff, #9387d6ff, #5e51acff);
+	color: #3b256eff;
+	border-color: #442a7e;
+}
+input[type = checkbox] {
+	accent-color: #6154abc4;
+}
