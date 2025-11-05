@@ -31,8 +31,8 @@ function still_mode() {
 window.addEventListener("load", function() {
     let theme = get_cookies().theme;
 
-    console.log(theme);
-    console.log(get_cookies());
+    //console.log(theme);
+    //console.log(get_cookies());
 
     switch(theme) {
         case "dark":
