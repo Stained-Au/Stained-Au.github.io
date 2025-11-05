@@ -35,7 +35,6 @@ function generateFilteredData() {
 			data_key = selected_data_keys[data_i];
 
 			failed = (data.horses[horse_i][data_key] == "null");
-			console.log(data.horses[horse_i].name, data_key, data.horses[horse_i][data_key], failed);
 			if(failed) {
 				break;
 			}
@@ -44,7 +43,6 @@ function generateFilteredData() {
 			filtered_data.push(data.horses[horse_i]);
 		}
 	}
-	console.log(filtered_data.length);
 	total_questions = filtered_data.length;
 }
 
@@ -58,7 +56,6 @@ function getRandomHorseData() {
 		for(let i = 0; i < selected_data_keys.length; i++)	{
 			data_key = selected_data_keys[i];
 
-			//console.log(random_data, data_key);
 			failed = (random_data[data_key] == "null") || already_appeared.includes(random_data.name);
 			if(failed) {
 				break;
@@ -66,7 +63,6 @@ function getRandomHorseData() {
 		}
 		if(!failed) {
 			filtered_data.splice(random_id, 1);
-			console.log(filtered_data.length);
 			return random_data;
 		}
 	}
@@ -105,6 +101,8 @@ function generateQuestion(horse_data) {
 			correct_text.classList = [];
 			break;
 	}
+
+	console.log(already_appeared);
 }
 
 function generateHorseDataEntry(key, add_hr = true) {
@@ -157,8 +155,6 @@ function submitGuess() {
 
 		generateQuestion(getRandomHorseData());
 		input.value = "";
-
-		console.log(already_appeared);
 	}
 }
 
