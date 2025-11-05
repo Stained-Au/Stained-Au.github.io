@@ -102,3 +102,16 @@ hr {
 .correcting_text_guess {
 	font-family: Consolas;
 }
+
+#left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #333;
+	width: 20vw;
+	height: 30vw;
+}
+
+#data_key_string {
+	width: 50%;
+}

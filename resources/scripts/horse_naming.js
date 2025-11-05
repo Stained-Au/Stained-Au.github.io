@@ -116,7 +116,7 @@ function submitGuess() {
 }
 
 let data_key_chars = {
-	"n": "name",
+	//"n": "name",
 	"S": "strengths",
 	"W": "weaknesses",
 	"E": "ears",
@@ -149,13 +149,38 @@ function parseDataKeyString(data_key_string) {
 	});
 	*/
 
-	for (const [key, value] of Object.entries(data_key_chars)) {
+	for(const [key, value] of Object.entries(data_key_chars)) {
   		if(strHas(data_key_string, key)) {
 			keys.push(value);
 		}
 	}
 
 	return keys;
+}
+
+function generateDataKeyString(data_key_char) {
+
+	let string = "";
+
+	for(const [key, value] of Object.entries(data_key_chars)) {
+
+		let checkbox = document.getElementById("data_key_checkbox_" + key);
+		if(checkbox.checked == true) {
+			string += key;
+		}
+	}
+
+	let data_key_string = document.getElementById("data_key_string");
+	data_key_string.value = string;
+}
+
+function reload() {
+	let data_key_string = document.getElementById("data_key_string");
+	if(data_key_string.value != "") {
+		location.href = "honse_naminh.html?mode=" + data_key_string.value;
+	} else {
+		alert("Choose at least one category");
+	}
 }
 
 /*
