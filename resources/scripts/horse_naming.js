@@ -5,6 +5,8 @@ let selected_data_keys = [];
 
 window.addEventListener("load", function() {
 	selected_data_keys = parseDataKeyString(getParams().mode);
+	updateCheckBoxes();
+	document.getElementById("data_key_string").value = getParams().mode;
 
 	generateQuestion(getRandomHorseData());
 });
@@ -26,12 +28,10 @@ function getRandomHorseData() {
 			data_key = selected_data_keys[i];
 
 			failed = (random_data[data_key] == "null");
-			console.log(random_data[data_key], data_key, failed);
 			if(failed) {
 				break;
 			}
 		}
-		console.log("failed", failed);
 		if(!failed) {
 			return random_data;
 		}
@@ -172,6 +172,15 @@ function generateDataKeyString(data_key_char) {
 
 	let data_key_string = document.getElementById("data_key_string");
 	data_key_string.value = string;
+	set_perm_cookie("mode", string);
+}
+
+function updateCheckBoxes() {
+	for(const [key, value] of Object.entries(data_key_chars)) {
+		if(selected_data_keys.includes(value)) {
+			document.getElementById("data_key_checkbox_" + key).checked = true;
+		}
+	}
 }
 
 function reload() {
