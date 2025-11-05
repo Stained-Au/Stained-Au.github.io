@@ -27,3 +27,18 @@ body {
 	border-color: #230000;
 	background-color: #390400;
 }
+.light_hr {
+	border: 1px solid #560600df;
+}
+hr {
+	border: 1px solid #5b0600df;
+}
+#left {
+	background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+	outline: 2px solid #250200;
+}
+input[type = text] {
+	background-image: radial-gradient(circle at center, #681b1bff, #660b0bff, #581500ff, #360400ff);
+	color: #c17269;
+	border-color: #250200;
+}
