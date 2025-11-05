@@ -42,3 +42,6 @@ input[type = text] {
 	color: #3b256eff;
 	border-color: #442a7e;
 }
+input[type = checkbox] {
+	accent-color: #6154abc4;
+}

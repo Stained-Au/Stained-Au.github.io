@@ -78,9 +78,11 @@ input[type=text] {
 .data_key {
 	font-weight: bold;
 }
+
 .data_value {
 	font-family: Consolas;
 }
+
 .data_entry {
 	width: 75%;
 	margin: auto;
@@ -105,13 +107,27 @@ hr {
 
 #left {
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 5vw;
+	top: 5vw;
 	/*background-color: #333;*/
-	width: 20vw;
-	height: 30vw;
+	width: 15vw;
+	min-height: 17vw;
+	padding-left: 1.5vw;
+	padding-top: 1.5vw;
+	border-radius: 0.3vw;
+	display: none;
 }
 
 #data_key_string {
-	width: 50%;
+	width: 70%;
+}
+
+#menu_mode {
+	position: fixed;
+	left: 1vw;
+	top: 1vw;
+	border-radius: 1vw;
+	height: 2vw;
+	width: 2vw;
+	text-align: center;
 }
