@@ -3,10 +3,20 @@ let last_correct = null;
 
 let selected_data_keys = [];
 
+let filtered_data = [];
+
+let already_appeared = [];
+
+let correct_questions = 0;
+let question_number = 1;
+let total_questions = 0;
+
 window.addEventListener("load", function() {
 	selected_data_keys = parseDataKeyString(getParams().mode);
 	updateCheckBoxes();
 	document.getElementById("data_key_string").value = getParams().mode;
+
+	generateFilteredData();
 
 	generateQuestion(getRandomHorseData());
 });
@@ -17,22 +27,46 @@ document.addEventListener("keydown", function(event) {
 	}
 });
 
-function getRandomHorseData() {
-	let failed = false;
-	while(true) {
-		let random_id = Math.round(Math.random() * data.horses.length);
-		let random_data = data.horses[random_id];
+function generateFilteredData() {
+	for(let horse_i = 0; horse_i < data.horses.length; horse_i++) {
 
-		//selected_data_keys.forEach(data_key =>
-		for(let i = 0; i < selected_data_keys.length; i++)	{
-			data_key = selected_data_keys[i];
+		let failed = false;
+		for(let data_i = 0; data_i < selected_data_keys.length; data_i++) {
+			data_key = selected_data_keys[data_i];
 
-			failed = (random_data[data_key] == "null");
+			failed = (data.horses[horse_i][data_key] == "null");
+			console.log(data.horses[horse_i].name, data_key, data.horses[horse_i][data_key], failed);
 			if(failed) {
 				break;
 			}
 		}
 		if(!failed) {
+			filtered_data.push(data.horses[horse_i]);
+		}
+	}
+	console.log(filtered_data.length);
+	total_questions = filtered_data.length;
+}
+
+function getRandomHorseData() {
+	let failed = false;
+	while(true) {
+		let random_id = Math.floor(Math.random() * filtered_data.length);
+		let random_data = filtered_data[random_id];
+
+		//selected_data_keys.forEach(data_key =>
+		for(let i = 0; i < selected_data_keys.length; i++)	{
+			data_key = selected_data_keys[i];
+
+			//console.log(random_data, data_key);
+			failed = (random_data[data_key] == "null") || already_appeared.includes(random_data.name);
+			if(failed) {
+				break;
+			}
+		}
+		if(!failed) {
+			filtered_data.splice(random_id, 1);
+			console.log(filtered_data.length);
 			return random_data;
 		}
 	}
@@ -42,7 +76,11 @@ function generateQuestion(horse_data) {
 	let area = document.getElementById("horse_data");
 	let elements = "";
 
+	let question_counter = document.getElementById("question_counter");
+	question_counter.innerHTML = "<div>Question #" + question_number + "</div><div>" + correct_questions + "/" + total_questions + "</div>";
+
 	current_horse = horse_data;
+	already_appeared.push(current_horse.name);
 
 	for(let i = 0; i < selected_data_keys.length; i++) {
 		let hr = i != selected_data_keys.length - 1;
@@ -106,13 +144,30 @@ function submitGuess() {
 		last_correct = guess === correct;
 		if(last_correct) {
 			correcting_text.innerHTML = "";
+			correct_questions += 1;
 		} else {
 			correcting_text.innerHTML = '<span class = "correcting_text">It was </span><span class = "correcting_text_correct">' + current_horse.name + '</span><br><br><span class = "correcting_text">You entered </span><span class = "correcting_text_guess">' + guess_raw + '</span>';
 		}
 
+		question_number += 1;
+
+		if(question_number > total_questions) {
+			generateSummary();
+		}
+
 		generateQuestion(getRandomHorseData());
 		input.value = "";
+
+		console.log(already_appeared);
 	}
+}
+
+function generateSummary() {
+
+	let area = document.getElementById("guessing");
+
+	area.innerHTML = '<div id = "summary">' + correct_questions + "/" + total_questions + "</div>";
+
 }
 
 let data_key_chars = {

@@ -115,3 +115,8 @@ hr {
 #data_key_string {
 	width: 50%;
 }
+
+#summary {
+	font-weight: bold;
+	font-size: 300%;
+}

@@ -15,7 +15,7 @@ let ids = {
 	"Taiki Shuttle": 1010,
 	"Grass Wonder": 1011,
 	"Hishi Amazon": 1012,
-	"Mejiro Mcqueen": 1013,
+	"Mejiro McQueen": 1013,
 	"El Condor Pasa": 1014,
 	"T.M. Opera O": 1015,
 	"Narita Brian": 1016,
